@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Activity Checklist</title>
+    <link rel="stylesheet" href="CA2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Activity Checklist</h1>
+        <form id="activity-form">
+          
+            <input type="text" id="name" name="name" required placeholder="Name">
+            
+           
+            <input type="text" id="activity" name="activity" required placeholder="Activity">
+            
+            <input type="date" id="date" name="date" required placeholder="Data">
+               
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit">Add Activity</button>
+        </form>
+
+        <h2>Your Activities</h2>
+        <ul id="activity-list"></ul>
+    </div>
+    <script src="CA2.js"></script>
+</body>
+</html>

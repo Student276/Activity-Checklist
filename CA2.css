@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #434645;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17bbd1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-activity {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-activity:hover {
+    background-color: darkred;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 500px){
+    /* This is will only run if the device has
+    less than 500px on it's screen */
+
+    .container{
+        padding: 20px;
+        width:150px
+        
+    }
+ 
+
+    button{
+        padding: 5px;
+    }
+
+    h2 {
+        
+        padding: px;
+        font-size: 20px;
+    }
+
+     
+
+    li {
+        height: 5px;
+        padding: 20px;
+        font-size: 10px;
+
+    }
+
+    li.completed {
+        text-decoration: line-through;
+        color: #999;
+        height: 5px;
+        padding: 20px;
+        font-size: 10px;
+        justify-content: space-between;
+    }
+
+
+
+}
